@@ -3,6 +3,7 @@ import React from 'react';
 import { Header } from '../../components/Header';
 import { Summary } from '../../components/Summary';
 import { PriceHighLight, TransactionsTable, TranscationsContainer } from './styles';
+import { SearchForm } from './components/SearchForm';
 
 export const Transactions = () => {
   return (
@@ -11,6 +12,7 @@ export const Transactions = () => {
       <Summary />
 
       <TranscationsContainer>
+        <SearchForm />
         <TransactionsTable>
           <tbody>
             <tr>
