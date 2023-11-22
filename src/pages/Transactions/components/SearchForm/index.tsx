@@ -4,6 +4,7 @@ import { MagnifyingGlass } from 'phosphor-react'
 import * as z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useFetchTransactions } from '../../../../hooks/useTransaction'
+import { memo } from 'react'
 
 const searchFormSchema = z.object({
   query: z.string(),
@@ -11,7 +12,7 @@ const searchFormSchema = z.object({
 
 type SearchFormInputs = z.infer<typeof searchFormSchema>
 
-export const SearchForm = () => {
+const SearchFormComponent = () => {
   const {
     register,
     handleSubmit,
@@ -41,3 +42,5 @@ export const SearchForm = () => {
     </SearchFormContainer>
   )
 }
+
+export const SearchForm = memo(SearchFormComponent)
