@@ -1,8 +1,8 @@
 {
-  "transactions" : [
+  "transactions": [
     {
       "id": 1,
-      "description" : "Desenvolvimento de site",
+      "description": "Desenvolvimento de site",
       "type": "income",
       "category": "Venda",
       "price": 14000,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "description" : "Hamburguer",
+      "description": "Hamburguer",
       "type": "outcome",
       "category": "Alimentacao",
       "price": 39.9,
@@ -18,11 +18,27 @@
     },
     {
       "id": 3,
-      "description" : "Ignte",
+      "description": "Ignte",
       "type": "outcome",
       "category": "Educacao",
       "price": 1900,
       "createdAt": "2022-10-29T19:25:44.505z"
+    },
+    {
+      "category": "Venda",
+      "description": "Desenvolvimento de app",
+      "price": 3000,
+      "type": "income",
+      "createdAt": "2023-11-22T21:20:17.674Z",
+      "id": 4
+    },
+    {
+      "category": "Alimentacao",
+      "description": "Pastel",
+      "price": 8,
+      "type": "outcome",
+      "createdAt": "2023-11-22T21:28:28.023Z",
+      "id": 5
     }
   ]
 }
