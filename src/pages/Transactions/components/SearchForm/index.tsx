@@ -1,7 +1,5 @@
-import React from 'react';
-
-import { SearchFormContainer } from './styles';
-import { MagnifyingGlass } from 'phosphor-react';
+import { SearchFormContainer } from './styles'
+import { MagnifyingGlass } from 'phosphor-react'
 
 export const SearchForm = () => {
   return (
@@ -13,5 +11,5 @@ export const SearchForm = () => {
         Buscar
       </button>
     </SearchFormContainer>
-  );
-};
+  )
+}
