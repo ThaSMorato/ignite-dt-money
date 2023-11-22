@@ -1,10 +1,4 @@
-import {
-  ReactNode,
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-} from 'react'
+import { ReactNode, createContext, useEffect, useState } from 'react'
 
 interface Transaction {
   id: number
@@ -23,7 +17,7 @@ interface TransactionProviderProps {
   children: ReactNode
 }
 
-const TransactionContext = createContext({} as TransactionContextType)
+export const TransactionContext = createContext({} as TransactionContextType)
 
 export const TransactionProvider = ({ children }: TransactionProviderProps) => {
   const [transactions, setTransactions] = useState<Transaction[]>([])
@@ -42,8 +36,4 @@ export const TransactionProvider = ({ children }: TransactionProviderProps) => {
       {children}
     </TransactionContext.Provider>
   )
-}
-
-export const useTransactions = () => {
-  return useContext(TransactionContext)
 }

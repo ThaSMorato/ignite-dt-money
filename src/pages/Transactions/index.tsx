@@ -6,7 +6,7 @@ import {
   TranscationsContainer,
 } from './styles'
 import { SearchForm } from './components/SearchForm'
-import { useTransactions } from '../../contexts/TransactionContext'
+import { useTransactions } from '../../hooks/useTransaction'
 
 export const Transactions = () => {
   const { transactions } = useTransactions()

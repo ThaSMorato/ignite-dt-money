@@ -15,6 +15,14 @@
       "category": "Alimentacao",
       "price": 39.9,
       "createdAt": "2022-07-29T19:25:44.505z"
+    },
+    {
+      "id": 3,
+      "description" : "Ignte",
+      "type": "outcome",
+      "category": "Educacao",
+      "price": 1900,
+      "createdAt": "2022-10-29T19:25:44.505z"
     }
   ]
 }
