@@ -7,6 +7,7 @@ import {
 } from './styles'
 import { SearchForm } from './components/SearchForm'
 import { useTransactions } from '../../hooks/useTransaction'
+import { dateFormater, priceFormatter } from '../../utils/formatter'
 
 export const Transactions = () => {
   const { transactions } = useTransactions()
@@ -25,11 +26,12 @@ export const Transactions = () => {
                 <td width="50%">{transaction.description}</td>
                 <td>
                   <PriceHighLight variant={transaction.type}>
-                    R$ {transaction.price}
+                    {transaction.type === 'outcome' && '- '}
+                    {priceFormatter.format(transaction.price)}
                   </PriceHighLight>
                 </td>
                 <td>{transaction.category}</td>
-                <td>{transaction.createdAt}</td>
+                <td>{dateFormater.format(new Date(transaction.createdAt))}</td>
               </tr>
             ))}
           </tbody>
