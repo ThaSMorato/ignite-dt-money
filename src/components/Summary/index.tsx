@@ -4,7 +4,7 @@ import { SummaryCard, SummaryContainer } from './styles'
 import { ArrowCircleDown, ArrowCircleUp, CurrencyDollar } from 'phosphor-react'
 
 export const Summary = () => {
-  const { transactions } = useTransactions()
+  const transactions = useTransactions()
 
   const summary = transactions.reduce(
     (acc, transaction) => {

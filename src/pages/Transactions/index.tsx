@@ -10,7 +10,7 @@ import { useTransactions } from '../../hooks/useTransaction'
 import { dateFormater, priceFormatter } from '../../utils/formatter'
 
 export const Transactions = () => {
-  const { transactions } = useTransactions()
+  const transactions = useTransactions()
 
   return (
     <div>
